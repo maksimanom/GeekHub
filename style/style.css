@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: myLightFont;
+    src: url(../fonts/ClearSans-Light.ttf);
+}
+.header{
+    width:100%;
+    height: auto;
+    background-image: url(../img/header2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#menu{
+    font-family: myLightFont;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 2%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+#home, #aboutMe, #contacts{
+    color: white;
+}
+.headerText{
+    margin-top: 10%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50pt;
+    color: white;
+}
+.headerDescription{
+    margin-top: 10%;
+    padding-bottom: 2%;
+    color: white;
+    text-align: center;
+    font-family: myLightFont;
+}
