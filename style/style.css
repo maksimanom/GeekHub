@@ -2,6 +2,10 @@
     margin:0;
     padding:0;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 @font-face {
     font-family: myLightFont;
     src: url(../fonts/ClearSans-Light.ttf);
@@ -60,10 +64,22 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: stretch;
+    color: white;
 }
 .element{
     padding-top: 2%;
     font-size: 15pt;
     flex-basis: 32%;
     text-align: center;
+}
+.iconsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-basis: 10%;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+
 }
