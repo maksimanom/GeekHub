@@ -5,3 +5,10 @@ form{
   border: 1px solid black;
   margin-bottom: 3%;
 }
+.table1 {
+  text-align: center;
+  font-weight: bold;
+}
+.moreWidth{
+  width: 5%;
+}
