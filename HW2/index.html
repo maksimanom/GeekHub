@@ -7,14 +7,15 @@
 </head>
 <body>
     <form method="post">
-        <div class="block">
+        Basic info
+        <fieldset class="">
             ID <input type="text" name="id" value="725" disabled><br>
             First Name <input type="text" name="firstName"><br>
             Last Name <input type="text"name="lastName"><br>
             Password <input type="password" name="password"><br>
-            Phone <input type="text" placeholder="380" name="phone"><br>
-            Email <input type="text" placeholder="email@website.com" name="email"><br>
-            <input type="checkbox" name="emailHidden">Keep my email address private<br>
+            Phone <input type="tel" placeholder="380" name="phone"><br>
+            Email <input type="email" placeholder="email@website.com" name="email"><br>
+            <label><input type="checkbox" name="emailHidden">Keep my email address private<br></label>
             We'll remove your public profile email and use
             1978331+username@users.noreply.localhost<br>
             DOB <input type="date" name="dob"><br>
@@ -22,15 +23,15 @@
             About me <textarea type="text" placeholder="Tell us smth about you" name="aboutMe" rows="5"></textarea><br>
             Profile Picture <input type="file" value="choose the file" name="file">
             <input type="hidden" value="forExampleHereIsInformationAboutUserAgent">
-        </div>
-
-        <div class="block">
+        </fieldset>
+        Professional info
+        <fieldset class="">
             Desire to study <input type="range" min="0" max="100" step="1"> <br>
-            Experience <input type="number" name="experience" step="0.5" value="1" min="0.5" max="50"> years <br>
+            Experience <input type="number" name="experience" step=0.5 value=1 min=0.5 max="50"> years <br>
             Development Experience <br>
             <input type="radio" id="learningToProgram" name="devExp" value="learning">
             <label for="learningToProgram">Learning to Program</label> <br>
-            <input type="radio" id="juniorDeveloper" name="devExp" value="junior">
+            <input type="radio" id="juniorDeveloper" name="devExp" value="junior" checked>
             <label for="juniorDeveloper">Junior Developer</label> <br>
             <input type="radio" id="midLevelDeveloper" name="devExp" value="midLevel">
             <label for="midLevelDeveloper">Mid-Level Developer</label> <br>
@@ -44,7 +45,7 @@
                         <option>Spain</option>
                     </select> <br>
             Skills
-            <input type="checkbox" id="html" name="skills" value="html">
+            <input type="checkbox" id="html" name="skills" value="html" checked>
             <label for="html">HTML</label> <br>
             <input type="checkbox" id="css" name="skills" value="css">
             <label for="css">CSS</label> <br>
@@ -56,7 +57,7 @@
             <label for="scala">Scala</label> <br>
             <input type="checkbox" id="haskell" name="skills" value="haskell">
             <label for="haskell">Haskell</label> <br>
-        </div>
+        </fieldset>
         <button type="reset">Cancel</button>
         <button type="submit">Submit</button>
     </form>
