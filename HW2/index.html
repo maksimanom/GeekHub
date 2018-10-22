@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="https://postman-echo.com/post" method="post">
-        Basic info
         <fieldset class="">
+            <legend>Basic info</legend>
             ID <input type="text" name="id" value="725" disabled><br>
             First Name <input type="text" name="firstName"><br>
             Last Name <input type="text"name="lastName"><br>
@@ -24,8 +24,8 @@
             Profile Picture <input type="file" value="choose the file" name="file">
             <input type="hidden" value="forExampleHereIsInformationAboutUserAgent">
         </fieldset>
-        Professional info
         <fieldset class="">
+            <legend>Professional info</legend>
             Desire to study <input type="range" min=0 max=100 step=1> <br>
             Experience <input type="number" name="experience" step=0.5 value=1 min=0.5 max=50> years <br>
             Development Experience <br>
@@ -37,12 +37,13 @@
             <label for="midLevelDeveloper">Mid-Level Developer</label> <br>
             <input type="radio" id="seniorDeveloper" name="devExp" value="senior">
             <label for="seniorDeveloper">Senior Developer</label> <br>
-            Country <select name="country">
+            Country <select name="country" id="country">
                         <option value="" selected disabled hidden> - Choose Your Country - </option>
-                        <option>Ukraine</option>
-                        <option>USA</option>
-                        <option>Thailand</option>
-                        <option>Spain</option>
+                        <option value="UA">Ukraine</option>
+                        <option disabled>-----------------</option>
+                        <option value="USA">USA</option>
+                        <option value="TH">Thailand</option>
+                        <option value="SP">Spain</option>
                     </select> <br>
             Skills
             <input type="checkbox" id="html" name="skills" value="html" checked>
