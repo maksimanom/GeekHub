@@ -1,2 +1,2 @@
 # Homework #2
-![first](https://a.radikal.ru/a25/1810/de/6f3db002be0d.png)
+![first](https://c.radikal.ru/c19/1810/1b/8f74b1a68b77.png)
