@@ -1,0 +1,23 @@
+form{
+  width: 30%;
+}
+.block{
+  border: 1px solid black;
+  margin-bottom: 3%;
+  padding: 5px;
+}
+.table1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.moreWidth{
+  width: 5%;
+}
+fieldset{
+  margin-bottom: 3%;
+}
+input{
+  margin-bottom: 1%;
+}
