@@ -9,7 +9,6 @@ img{
 }
 h1{
   margin: 2px 20px 2px 0px;
-
 }
 header{
   background-image: linear-gradient(to left, #bf1e2e, #f1592a);
@@ -23,6 +22,10 @@ header{
   text-transform: uppercase;
   font-size: 12px;
   /*font-family: Roboto;*/
+}
+.container a{
+  text-decoration: none;
+  color: white;
 }
 .container p {
   width: 88px;
