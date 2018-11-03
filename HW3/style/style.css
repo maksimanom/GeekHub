@@ -2,6 +2,7 @@ body{
   padding: 0;
   font-family: Roboto;
 }
+
 img{
   padding: 0;
   margin: 0;
@@ -100,4 +101,45 @@ aside{
 }
 .video-add-margin{
   margin-top: 15px;
+}
+footer{
+  margin-top: 15px;
+  border-top: 4px solid orangered;
+}
+.footer-nav{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.footer-nav p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-nav p a:hover{
+  color: #cd2e2d;
+}
+.footer-nav div{
+  background: darkgray;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 5px;
+  text-align: center;
+}
+.footer-nav div img{
+  text-align: center;
+  vertical-align: middle;
+}
+.footer-nav a{
+  text-decoration: none;
+  color: darkgray;
+}
+.footer-nav div img:hover{
+  background: orangered;
+  border: 1px solid orangered;
 }
