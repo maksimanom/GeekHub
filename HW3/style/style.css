@@ -43,19 +43,22 @@ header{
   color: white;
 }
 .poster{
-  /*background: url("../img/preview.png") no-repeat;
-  background-size: contain;*/
-  z-index: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  background: url("../img/preview.png");
+  height: 528px;
+  background-size: cover;
+  background-position:  center center;
 }
 .dates-of-performance{
-  position: relative;
-  top: -140px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 18px;
   font-weight: lighter;
-  z-index: 2;
 }
 .arrow{
   font-weight: lighter;
@@ -86,6 +89,7 @@ header{
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   color: white;
@@ -99,6 +103,7 @@ header{
 .selected-date{
   width: 464px;
   height: 92px;
+  max-height: 92px;
   background: #E14927;
   background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
   radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
@@ -131,8 +136,9 @@ main{
   margin: 0px 20px 0px 20px;
 }
 .columns{
+  margin-top: 20px;
   display: flex;
-  margin-top: -110px;
+  flex-wrap: nowrap;
   justify-content: center;
   /*position: relative;
   top:-140px*/;
@@ -238,8 +244,9 @@ footer{
   margin-right: 5px;
   margin-left: 5px;
 }
-.footer-nav p a:hover{
+.footer-nav a:hover{
   color: #cd2e2d;
+  /*margin: 0 5px;*/
 }
 .footer-nav div{
   background: darkgray;
@@ -256,7 +263,7 @@ footer{
   text-decoration: none;
   color: darkgray;
 }
-.footer-nav div img:hover{
+.footer-nav div:hover{
   background: orangered;
   border: 1px solid orangered;
 }
