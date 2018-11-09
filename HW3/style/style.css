@@ -113,14 +113,23 @@ header{
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: white;
-  padding: 20px;
 }
 h4{
-  font-size: xx-large;
+  font-size: 27px;
+}
+.info-buy-ticket{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 0 20px;
+}
+.name-of-selected-permormance{
+  padding: 0 20px;
 }
 .dates-of-performance div:nth-child(4){
-  background: #E14927;
   background: #E14927;
   background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
   radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
@@ -143,11 +152,7 @@ main{
   /*position: relative;
   top:-140px*/;
 }
-.info-buy-ticket{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .buy-ticket-button{
   padding: 5px;
   line-height: 1.5em;
@@ -157,23 +162,21 @@ main{
   text-transform: uppercase;
 }
 .center-Nav{
-  /*width: 200px;*/
   text-transform: uppercase;
-  /*font-family: Roboto;*/
-  font-size: 16px;
-  /*font-weight: normal;*/
-  /*flex-basis: 15%;*/
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 .center-Nav img{
   margin-right: 5px;
   max-height: 1.5em;
 }
-.center-Nav p{
-  margin-bottom: 10px;
-}
 .center-Nav a{
   text-decoration: none;
   color: #363a3b;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
 }
 .center-Nav a:hover{
   color: #df4a2b;
@@ -225,13 +228,25 @@ aside{
 .video-add-margin{
   margin-top: 15px;
 }
-footer{
-  margin-top: 15px;
-  border-top: 4px solid orangered;
+footer::before {
+  /* Градиент */
+  background: #f1592a;
+  background: -moz-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f1592a), color-stop(100%, #bf1e2e));
+  background: -webkit-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: -o-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: -ms-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: linear-gradient(to right, #f1592a 0%, #bf1e2e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#999999', GradientType=1);
+  content: "";
+  display: block;
+  /* Вместо толщины */
+  height: 3px;
+  width: 100%;
 }
 .footer-nav{
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -240,7 +255,7 @@ footer{
   text-transform: uppercase;
   font-size: 12px;
 }
-.footer-nav p {
+.footer-nav a {
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -266,4 +281,17 @@ footer{
 .footer-nav div:hover{
   background: orangered;
   border: 1px solid orangered;
+}
+.more-right{
+  margin-left: 209px;
+}
+.back-to-top{
+  width: 32px;
+  height: 32px;
+  background-color: #cd2e2d;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  margin-left: 1150px;
+  justify-content: center;
+  align-items: center;
 }
