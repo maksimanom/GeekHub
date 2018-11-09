@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../fonts/Lato-Bold.ttf);
+}
+.main-page{
+  height: 950px;
+  object-fit: contain;
+  background-image: linear-gradient(to top, #eb402c, #d90647);
+}
+h1{
+  width: 121px;
+  height: 45px;
+}
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+  margin: 0 200px 0 200px;
+}
+.wrapper-for-main-nav{
+  width: 413px;
+  font-family: Lato-Regular;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper-for-main-nav a{
+  margin: 0 50px;
+}
+.slogan{
+  font-size: 72px;
+  color: #ffffff;
+  font-family: Lato-Black;
+  letter-spacing: 2.9px;
+}
+.slogan-description{
+  margin-top: 43px;
+  font-family: Lato-Regular;
+  font-size: 24px;
+  color: #ffffff;
+}
+.bold-text{
+  font-family: Lato-Black;
+  font-size: 18px;
+}
+.button-download{
+  font-family: Lato-Bold;
+  background: white;
+  width: 224px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d90647;
+  margin-top: 101px;
+}
+.iphone-image{
+  min-width: 100px;
+  min-height: 200px;
+  max-width: 479px;
+  max-height: 821px;
+}
+.first-page-block{
+  margin-top: 132px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 417px;
+  margin-right: 354px;
+}
