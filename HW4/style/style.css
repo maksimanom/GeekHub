@@ -22,7 +22,10 @@ body{
 .main-page{
   height: 950px;
   object-fit: contain;
-  background: linear-gradient(to top, #eb402c, #d90647);
+  /*background: linear-gradient(to top, #eb402c, #d90647);*/
+  background-image: url("../img/white-triangle.png"), linear-gradient(to top, #eb402c, #d90647);
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 h1{
   width: 121px;
@@ -298,4 +301,93 @@ h3{
 }
 .ico-function-right-menu{
   margin-right: 44px;
+}
+.subscribe-block{
+  margin-top: 227px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.description-subscribe{
+  margin-top: 49px;
+  font-family: Lato-Regular;
+  max-width: 904px;
+  text-align: center;
+  color: #808080;
+}
+.subscribe-form{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 147px;
+}
+.subscribe-form input{
+  padding: 17px 0 17px 34px;
+  width: 571px;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 50px;
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #808080;
+}
+.subscribe-form button{
+  margin-left: -180px;
+  width: 180px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #eb402c, #d90647);
+  box-shadow: 0px 10px 30px 0 rgba(223, 27, 61, 0.3);
+  font-family: Lato-Bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+.download-the-app-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.ico-app{
+  margin-top: 100px;
+  width: 160px;
+}
+.description-to-download{
+  margin-top: 39px;
+  font-family: Lato-Regular;
+  max-width: 795px;
+  text-align: center;
+  color: #808080;
+}
+.app-store{
+  margin-top: 59px;
+  margin-bottom: 148px;
+}
+.footer-nav{
+  margin-top: 46px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Lato-Regular;
+  color: #363636;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.footer-nav a {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.footer-nav select{
+  width: 200px;
+  border-radius: 50px;
+  padding: 5px 13px;
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #363636;
+  border: none;
+  background-color: #f8f8f8;
 }
