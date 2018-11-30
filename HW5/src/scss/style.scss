@@ -44,7 +44,7 @@ h1{
   color: white;
   font-size: 18px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .wrapper-for-main-nav a{
   margin: 0 50px;
@@ -81,6 +81,8 @@ h1{
   max-width: 479px;
   max-height: 821px;
   margin-left: 100px;
+  @media screen and (max-width: 900px) {
+    visibility: hidden; }
 }
 .first-page-block{
   margin-top: 132px;
