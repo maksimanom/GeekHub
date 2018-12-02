@@ -17,6 +17,9 @@
 body {
   margin: 0 auto; }
 
+body, html {
+  width: 100%; }
+
 .main-page {
   height: 950px;
   background-image: url("../../src/img/white-triangle.png"), linear-gradient(to top, #eb402c, #d90647);
@@ -24,7 +27,7 @@ body {
   background-repeat: no-repeat; }
   @media screen and (max-width: 901px) {
     .main-page {
-      height: 100%;
+      height: auto;
       background: linear-gradient(to top, #eb402c, #d90647); } }
 
 h1 {
@@ -38,7 +41,7 @@ h1 {
   padding-top: 41px; }
   @media screen and (max-width: 901px) {
     .main-nav {
-      margin-left: 10%; } }
+      margin-left: 15px; } }
 
 .wrapper-for-main-nav {
   font-family: Lato-Regular;
@@ -60,6 +63,9 @@ h1 {
   color: #ffffff;
   font-family: Lato-Black;
   letter-spacing: 2.9px; }
+  @media screen and (max-width: 901px) {
+    .slogan {
+      font-size: 56px; } }
 
 .slogan-description {
   margin-top: 43px;
@@ -81,6 +87,10 @@ h1 {
   align-items: center;
   color: #d90647;
   margin-top: 101px; }
+  @media screen and (max-width: 901px) {
+    .button-download {
+      margin-top: 50px;
+      margin-bottom: 50px; } }
 
 .iphone-image {
   max-width: 479px;
@@ -96,13 +106,16 @@ h1 {
   justify-content: center; }
   @media screen and (max-width: 901px) {
     .first-page-block {
-      margin-top: 50px; } }
+      margin: 50px 15px 0 15px; } }
 
 .easy-messaging-block {
   margin-top: 52px;
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 901px) {
+    .easy-messaging-block {
+      margin: 50px 15px 0 15px; } }
 
 .pictures-messaging {
   display: flex;
@@ -119,6 +132,9 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-left: 100px; }
+  @media screen and (max-width: 901px) {
+    .text-to-block {
+      margin-left: 0; } }
 
 h2 {
   font-family: Lato-Black;
@@ -142,19 +158,27 @@ h2 {
   font-size: 18px;
   color: #808080;
   line-height: 1.78; }
+  @media screen and (max-width: 901px) {
+    .description-text-easy-messaging {
+      margin-bottom: 50px; } }
 
 .keep-in-touch-block {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 184px;
   border-bottom: 1px solid #e0e0e0; }
+  @media screen and (max-width: 901px) {
+    .keep-in-touch-block {
+      margin: 50px 15px 0 15px; } }
 
 .pictures-contacts {
   /*background: url("../../src/img/contacts-under.png") no-repeat;*/
   display: flex;
   justify-content: center;
   align-items: flex-start; }
+  @media screen and (max-width: 901px) {
+    .pictures-contacts {
+      display: none; } }
 
 .image-on-other {
   margin-right: -147px;
@@ -166,10 +190,16 @@ h2 {
 
 .what-people-say-block {
   margin-top: 95px; }
+  @media screen and (max-width: 901px) {
+    .what-people-say-block {
+      margin: 50px 15px 0 15px; } }
 
 .text-center-what-people-say {
   text-align: center;
   margin-bottom: 128px; }
+  @media screen and (max-width: 901px) {
+    .text-center-what-people-say {
+      margin-bottom: 50px; } }
 
 .wrapper-for-responses {
   display: flex;
@@ -177,6 +207,10 @@ h2 {
 
 .response {
   max-width: 370px; }
+  @media screen and (max-width: 901px) {
+    .response {
+      margin: 0 10px;
+      max-width: 40%; } }
 
 .text-of-response {
   font-family: Lato-Italic;
@@ -190,6 +224,10 @@ h2 {
   text-overflow: ellipsis;
   margin-bottom: 26px;
   border: 1px #E6E6E6 solid; }
+  @media screen and (max-width: 901px) {
+    .text-of-response {
+      height: 300px;
+      border-radius: 10px; } }
 
 .address-of-response {
   max-width: 114px;
@@ -225,6 +263,9 @@ h2 {
 
 .add-mergin-response-center {
   margin: 0 30px; }
+  @media screen and (max-width: 901px) {
+    .add-mergin-response-center {
+      display: none; } }
 
 .response:hover {
   margin-top: -20px;
@@ -243,14 +284,27 @@ h2 {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to top, #eb402c, #d90647); }
+  @media screen and (max-width: 901px) {
+    .block-with-opportunites {
+      margin-top: 100px;
+      flex-direction: column;
+      height: auto;
+      border: none;
+      border-radius: 15px; } }
 
 .iphone-on-center {
   margin-top: 50px; }
+  @media screen and (max-width: 901px) {
+    .iphone-on-center {
+      display: none; } }
 
 .left-functions {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media screen and (max-width: 901px) {
+    .left-functions {
+      margin: 0 15px; } }
 
 h3 {
   color: #ffffff;
@@ -265,6 +319,10 @@ h3 {
   margin-top: 51px;
   display: flex;
   justify-content: flex-start; }
+  @media screen and (max-width: 901px) {
+    .left-function {
+      justify-content: center;
+      align-items: center; } }
 
 .left-function p {
   max-width: 255px;
@@ -278,6 +336,9 @@ h3 {
   text-overflow: ellipsis;
   word-wrap: break-word;
   word-break: break-all; }
+  @media screen and (max-width: 901px) {
+    .left-function p {
+      height: auto; } }
 
 .ico-function-left-menu {
   margin-left: 44px; }
@@ -286,11 +347,18 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media screen and (max-width: 901px) {
+    .right-functions {
+      margin: 0 15px; } }
 
 .right-function {
   margin-top: 51px;
   display: flex;
   justify-content: flex-start; }
+  @media screen and (max-width: 901px) {
+    .right-function {
+      justify-content: center;
+      align-items: center; } }
 
 .right-function p {
   max-width: 255px;
@@ -305,6 +373,10 @@ h3 {
   word-wrap: break-word;
   word-break: break-all; }
 
+@media screen and (max-width: 901px) {
+  .add-mobile-margin-bottom {
+    margin-bottom: 50px; } }
+
 .ico-function-right-menu {
   margin-right: 44px; }
 
@@ -315,6 +387,9 @@ h3 {
   flex-flow: column nowrap;
   align-items: center;
   border-bottom: 1px solid #e0e0e0; }
+  @media screen and (max-width: 901px) {
+    .subscribe-block {
+      margin: 50px 15px 0 15px; } }
 
 .description-subscribe {
   margin-top: 49px;
@@ -328,6 +403,10 @@ h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 147px; }
+  @media screen and (max-width: 901px) {
+    .subscribe-form {
+      max-width: 200px;
+      margin-bottom: 50px; } }
 
 .subscribe-form input {
   padding: 17px 0 17px 34px;
@@ -349,6 +428,9 @@ h3 {
   font-family: Lato-Bold;
   color: #ffffff;
   font-size: 18px; }
+  @media screen and (max-width: 901px) {
+    .subscribe-form button {
+      margin: 0; } }
 
 .download-the-app-block {
   display: flex;
@@ -356,10 +438,16 @@ h3 {
   align-items: center;
   text-align: center;
   border-bottom: 1px solid #e0e0e0; }
+  @media screen and (max-width: 901px) {
+    .download-the-app-block {
+      margin: 50px 15px 0 15px; } }
 
 .ico-app {
   margin-top: 100px;
   width: 160px; }
+  @media screen and (max-width: 901px) {
+    .ico-app {
+      margin-top: 50px; } }
 
 .description-to-download {
   margin-top: 39px;
@@ -371,6 +459,9 @@ h3 {
 .app-store {
   margin-top: 59px;
   margin-bottom: 148px; }
+  @media screen and (max-width: 901px) {
+    .app-store {
+      margin-bottom: 50px; } }
 
 .footer-nav {
   margin-top: 46px;
@@ -383,15 +474,23 @@ h3 {
   color: #363636;
   text-transform: uppercase;
   font-size: 18px; }
+  @media screen and (max-width: 901px) {
+    .footer-nav {
+      font-size: 10px;
+      flex-direction: column; } }
 
 .footer-nav a {
   margin-right: 15px;
   margin-left: 15px; }
 
 .footer-nav select {
-  width: 200px;
+  max-width: 200px;
   font-family: Lato-Regular;
   font-size: 18px;
   color: #363636;
   border: none;
   background-color: #f8f8f8; }
+  @media screen and (max-width: 901px) {
+    .footer-nav select {
+      font-size: 10px;
+      margin-top: 5px; } }
