@@ -21,6 +21,49 @@ body{
 body, html{
   width: 100%;
 }
+.wrapper-for-main-nav{
+  display: flex;
+  list-style: none;
+}
+.wrapper-for-main-nav > a{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+#btn-menu{
+  display: none;
+}
+#btn-menu + label{
+  display: none;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+#btn-menu + label:before{
+  font-family: FontAwesome;
+  content: '\f03a';
+  display: inline-block;
+  font-size: 18px;
+}
+#btn-menu:checked + label:before{
+  font-family: FontAwesome;
+  content: '\f03a';
+  color: #fff;
+}
+@media screen and (max-width: $mobile-screen) {
+
+  #btn-menu + label{
+    display: inline-block;
+  }
+  #btn-menu + label + .wrapper-for-main-nav{
+    display: none;
+  }
+  #btn-menu:checked + label + .wrapper-for-main-nav{
+    display: block;
+  }
+}
+
 .main-page{
   height: 950px;
   //object-fit: contain;
@@ -30,7 +73,10 @@ body, html{
   background-repeat: no-repeat;
   @media screen and (max-width: $mobile-screen) {
     height: auto;
-    background: linear-gradient(to top, #eb402c, #d90647); }
+    background: linear-gradient(to top, #eb402c, #d90647);
+    border: none;
+    border-radius: 0 0 15px 15px;
+  }
 }
 h1{
   //width: 121px;
@@ -58,6 +104,7 @@ h1{
 }
 .wrapper-for-main-nav a{
   margin: 0 50px;
+  text-decoration: none;
 }
 .slogan{
   font-size: 72px;
