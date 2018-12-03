@@ -263,8 +263,10 @@ h2{
   margin-bottom: 26px;
   border: 1px #E6E6E6 solid;
   @media screen and (max-width: $mobile-screen) {
-    height: 300px;
+    height: auto;
     border-radius: 10px;
+    font-size: 10px;
+    padding: 10px 5px 10px 5px;
   }
 }
 .address-of-response{
@@ -277,27 +279,40 @@ h2{
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
+  @media screen and (max-width: $mobile-screen) {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
 .image-of-author{
   max-width: 62px;
   height: 62px;
   border-radius: 31px;
+  @media screen and (max-width: $mobile-screen) {
+    height: 31px;
+  }
 }
 .author{
   display: flex;
   align-items: center;
+  font-size: 18px;
+  @media screen and (max-width: $mobile-screen) {
+    font-size: 10px;
+  }
 }
 .author-name{
   font-family: Lato-Regular;
-  font-size: 18px;
   letter-spacing: 1.1px;
   color: #363636;
   margin-left: 19px;
 }
 .author-work{
-  font-size: 16px;
   color: #667386;
   margin-top: 11px;
+  @media screen and (max-width: $mobile-screen) {
+    margin-top: 5px;
+  }
 }
 .add-mergin-response-center{
   margin: 0 30px;
