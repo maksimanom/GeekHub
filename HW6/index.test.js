@@ -156,10 +156,10 @@ test('string_trim', () => {
   expect(str.trim()).toEqual('Maksym Kozoriz');
 });
 
-test('string_trimEnd', () => {
+/*test('string_trimEnd', () => {
   let str="Maksym Kozoriz   ";
   expect(str.trimEnd()).toEqual('Maksym Kozoriz');
-});
+});*/
 
 /*
 test('string_trimStart', () => {
