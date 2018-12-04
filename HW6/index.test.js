@@ -156,17 +156,16 @@ test('string_trim', () => {
   expect(str.trim()).toEqual('Maksym Kozoriz');
 });
 
-/*test('string_trimEnd', () => {
+test('string_trimEnd', () => {
   let str="Maksym Kozoriz   ";
   expect(str.trimEnd()).toEqual('Maksym Kozoriz');
-});*/
+});
 
-/*
+
 test('string_trimStart', () => {
   let str=" Maksym Kozoriz ";
   expect(str.trimStart()).toEqual('Maksym Kozoriz ');
 });
-*/
 
 test('string_valueOf', () => {
   let stringObject = new String('Maksym Kozoriz');
@@ -183,3 +182,13 @@ test('string_raw', () => {
   expect('From: ' + str).toEqual('From: C:\\Program Files');
 });
 
+//P R O P E R T I E S
+
+test('string_length', () => {
+  let str = "Maksym Kozoriz";
+  expect(str.length).toEqual(14);
+});
+
+/*test('', () => {
+  expect().toEqual();
+});*/
