@@ -1,2 +1,1 @@
-# Homework #3
-![first](https://c.radikal.ru/c00/1811/c6/015aac89c69f.png)
+[![Build Status](https://travis-ci.org/maksimanom/GeekHub.svg?branch=HWJS1)](https://travis-ci.org/maksimanom/GeekHub)
