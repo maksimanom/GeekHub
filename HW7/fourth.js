@@ -10,7 +10,7 @@
 #######*#
 #########
 */
-while(true){ /*WHILE GAME NOT ENDED*/
+for(let i=0; i<4; i++){ /*WHILE GAME NOT ENDED*/
   while(isFree('south')){
     south();
   }
