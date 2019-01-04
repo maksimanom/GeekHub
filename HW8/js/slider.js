@@ -1,5 +1,4 @@
-let slideIndex = 1;
-showDivs(slideIndex);
+let slideIndex = 2;
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
