@@ -75,6 +75,7 @@ header{
 }
 .arrow:hover{
   background: #E14927;
+  cursor: pointer;
 }
 .date-of-performance{
   margin: 0 1px 0 1px;
@@ -82,9 +83,9 @@ header{
   height: 92px;
   background: #4F4F4F;
   background: radial-gradient(circle at top left, transparent 15px, #4F4F4F 0) top left,
-              radial-gradient(circle at top right, transparent 15px, #4F4F4F 0) top right,
-              radial-gradient(circle at bottom right, transparent 15px, #4F4F4F 0) bottom right,
-              radial-gradient(circle at bottom left, transparent 15px, #4F4F4F 0) bottom left;
+  radial-gradient(circle at top right, transparent 15px, #4F4F4F 0) top right,
+  radial-gradient(circle at bottom right, transparent 15px, #4F4F4F 0) bottom right,
+  radial-gradient(circle at bottom left, transparent 15px, #4F4F4F 0) bottom left;
   background-size: 50% 50%;
   background-repeat: no-repeat;
   display: flex;
@@ -129,7 +130,16 @@ h4{
 .name-of-selected-permormance{
   padding: 0 20px;
 }
-.dates-of-performance div:nth-child(4){
+.date-of-performance-default{
+  background: #E14927;
+  background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
+  radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
+  radial-gradient(circle at bottom right, transparent 15px, #E14927 0) bottom right,
+  radial-gradient(circle at bottom left, transparent 15px, #E14927 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+.date-of-performance-selected{
   background: #E14927;
   background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
   radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
@@ -294,4 +304,7 @@ footer::before {
   margin-left: 1150px;
   justify-content: center;
   align-items: center;
+}
+.no-display-default{
+  display: none;
 }
