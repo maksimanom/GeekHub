@@ -15,8 +15,10 @@ function showDivs(n) {
      x[i].style.display = "none";
    }
   for (i = 0; i < x.length; i++) {
-    z[i].style.backgroundColor = "#4F4F4F";
+    z[i].classList.remove('date-of-performance-default');
+    z[i].classList.remove('date-of-performance-selected');
+    z[i].classList.add('date-of-performance');
   }
    x[slideIndex-1].style.display = "flex";
-   z[slideIndex-1].style.backgroundColor = "#E14927";
+   z[slideIndex-1].classList.toggle('date-of-performance-selected')
 }
