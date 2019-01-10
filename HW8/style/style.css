@@ -72,6 +72,7 @@ header{
   background: #505050;
   color: white;
   border-radius: 5px;
+  border: none;
 }
 .arrow:hover{
   background: #E14927;

@@ -5,7 +5,6 @@
     <title>HW3 by Kozoriz Maksym</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
-    <script src="./js/slider.js"></script>
 </head>
 <body>
 <header class="container">
@@ -31,7 +30,7 @@
 <!--CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER CENTER -->
 <div class="poster">
     <div class="dates-of-performance">
-        <div class="arrow" onclick="plusDivs(-1)"><</div>
+        <button class="arrow" id="arrowLeft"><</button>
         <div class="date-of-performance">
             <p>Нд</p>
             <p class="number-date">21</p>
@@ -122,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="arrow" onclick="plusDivs(+1)">></div>
+        <button class="arrow" id="arrowRight">></button>
     </div>
 </div>
 
@@ -210,5 +209,8 @@
         <div><img src="img/vk.png" alt="vk"></div>
     </nav>
 </footer>
+
+
+<script src="./js/slider.js"></script>
 </body>
 </html>
