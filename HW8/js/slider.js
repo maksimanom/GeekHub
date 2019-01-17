@@ -17,6 +17,7 @@ arrowLeft.addEventListener('click', function () {
     }
     x[slideIndex-1].style.display = "flex";
     z[slideIndex-1].classList.toggle('date-of-performance-selected');
+    changeBg(slideIndex);
     slideIndex -= 1;
 });
 arrowRight.addEventListener('click', function () {
@@ -35,8 +36,17 @@ arrowRight.addEventListener('click', function () {
   }
   x[slideIndex].style.display = "flex";
   z[slideIndex].classList.toggle('date-of-performance-selected');
+  changeBg(slideIndex);
   slideIndex += 1;
 });
+function changeBg(slideInd) {
+  poster = document.getElementById('poster');
+  slideInd == 0  ? poster.style.backgroundImage="url(\"./img/preview1.png\")" : console.log('slideInd 0 not working');
+  slideInd == 1  ? poster.style.backgroundImage="url(\"../img/preview2.png\")" : console.log('slideInd 1 not working');
+  slideInd == 2  ? poster.style.backgroundImage="url(\"./img/preview3.png\")" : console.log('slideInd 2 not working');
+  slideInd == 3  ? poster.style.backgroundImage="url(\"./img/preview4.png\")" : console.log('slideInd 3 not working');
+  slideInd == 4  ? poster.style.backgroundImage="url(\"./img/preview5.png\")" : console.log('slideInd 4 not working');
+}
 
 function showSelectedPerformance(n) {
   let x = document.getElementsByClassName("selected-date");
