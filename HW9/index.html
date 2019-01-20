@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW9_JS4</title>
+    <style>
+        pre {
+            font-size: 15px;
+        }
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 600px;
+            margin: 10px auto ;
+            border: none;
+        }
+        .fun {
+            width: 180px;
+            margin: 10px;
+            border: 1px solid #737373;
+            border-radius: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+  створити одну функцію для генерації рандомного числа від 1 до 10, яка буде видавати це число через 1сек після виклику
+  другу функцию для генерації рандомного числа від 1 до 10, яка буде видавати число через 2сек після виклику
+  створити запит на
+  <strong> http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}</strong> -
+  де limitNumber ви отримуєте з першої функції, pageNumber - з другої, результат запиту вивести в консоль
+  реалізувати 3 рішення: через callback, Promise, async
+</pre>
+<div class="wrap">
+    <div class="fun"><span class="text">callback limitNumber </span> <span id="limitNumber1"></span></div>
+    <div class="fun"><span  class="text">callback pageNumber </span> <span id="pageNumber1"></span></div>
+
+    <div class="fun"><span class="text">Promis limitNumber </span> <span id="limitNumber2"></span></div>
+    <div class="fun"><span  class="text">Promis pageNumber </span> <span id="pageNumber2"></span></div>
+
+    <div class="fun"><span class="text">Await limitNumber </span> <span id="limitNumber3"></span></div>
+    <div class="fun"><span  class="text">Await pageNumber </span> <span id="pageNumber3"></span></div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
