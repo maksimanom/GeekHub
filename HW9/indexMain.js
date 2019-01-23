@@ -7,13 +7,13 @@
   //PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE
   function PromiseTest() {
     return new Promise((resolve, reject) => {
-      var xhr = new XMLHttpRequest();
+      let xhr = new XMLHttpRequest();
       xhr.open('GET', 'http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}', true);
       xhr.onload = function () {
         if (this.status == 200) {
           resolve(this.response);
         } else {
-          var error = new Error(this.statusText);
+          let error = new Error(this.statusText);
           error.code = this.status;
           reject(error);
         }
@@ -33,6 +33,26 @@
 
       alert(result); // "done!"
     }
-    AsyncTest();
-  //CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK
 
+  //CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK
+  function testCallback(callback) {
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}', true);
+    xhr.onload = function () {
+      if (this.status == 200) {
+        callback(this.response);
+      } else {
+        let error = new Error(this.statusText);
+        error.code = this.status;
+        reject(error);
+      }
+    };
+    xhr.onerror = function () {
+      reject(new Error("Network Error"));
+    };
+    xhr.send();
+  }
+
+  testCallback(function (response) {
+    console.log(JSON.parse(response));
+  })
