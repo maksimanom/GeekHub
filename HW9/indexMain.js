@@ -6,7 +6,7 @@
   let pageNumber = setTimeout(generateRandomNumber, 2000);
   //PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE PROMISE
   function PromiseTest() {
-    return new Promise((resolve, reject) => {
+    let Prom = new Promise((resolve, reject) => {
       let xhr = new XMLHttpRequest();
       xhr.open('GET', 'http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}', true);
       xhr.onload = function () {
@@ -15,15 +15,17 @@
         } else {
           let error = new Error(this.statusText);
           error.code = this.status;
-          reject(error);
         }
-      };
-      xhr.onerror = function () {
-        reject(new Error("Network Error"));
       };
       xhr.send();
     });
+    Prom.then((resolve) => {
+      console.warn("Promise =>", JSON.parse(resolve));
+    }).catch((reject) => {
+      console.error("Sorry, you or we have some problem");
+    });
   }
+
   //ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC ASYNC
     async function AsyncTest() {
 
@@ -36,23 +38,14 @@
 
   //CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK CALLBACK
   function testCallback(callback) {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}', true);
-    xhr.onload = function () {
-      if (this.status == 200) {
-        callback(this.response);
-      } else {
-        let error = new Error(this.statusText);
-        error.code = this.status;
-        reject(error);
+    myXMLHttp.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        callback(JSON.parse(this.responseText));
       }
     };
-    xhr.onerror = function () {
-      reject(new Error("Network Error"));
-    };
-    xhr.send();
+    myXMLHttp.open("GET", `http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber1}&page=${pageNumber1}`);
+    myXMLHttp.send();
   }
-
   testCallback(function (response) {
-    console.log(JSON.parse(response));
-  })
+    console.log(response);
+  });
