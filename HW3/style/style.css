@@ -1,0 +1,297 @@
+body{
+  padding: 0;
+  font-family: Roboto;
+}
+
+img{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  margin: 2px 20px 2px 0px;
+}
+header{
+  background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+}
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  /*font-family: Roboto;*/
+}
+.container a{
+  text-decoration: none;
+  color: white;
+}
+.container p {
+  width: 88px;
+  line-height: 76px;
+  text-align: center;
+  vertical-align: middle;
+}
+.container p:hover{
+  background-color: white;
+  color: black;
+}
+.container select{
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+.poster{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  background: url("../img/preview.png");
+  height: 528px;
+  background-size: cover;
+  background-position:  center center;
+}
+.dates-of-performance{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  font-weight: lighter;
+}
+.arrow{
+  font-weight: lighter;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  background: #505050;
+  color: white;
+  border-radius: 5px;
+}
+.arrow:hover{
+  background: #E14927;
+}
+.date-of-performance{
+  margin: 0 1px 0 1px;
+  width: 92px;
+  height: 92px;
+  background: #4F4F4F;
+  background: radial-gradient(circle at top left, transparent 15px, #4F4F4F 0) top left,
+              radial-gradient(circle at top right, transparent 15px, #4F4F4F 0) top right,
+              radial-gradient(circle at bottom right, transparent 15px, #4F4F4F 0) bottom right,
+              radial-gradient(circle at bottom left, transparent 15px, #4F4F4F 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.number-date{
+  font-weight: normal;
+  font-size: xx-large;
+  margin: 8px 0 8px 0;
+  border-bottom: 1px solid white;
+}
+.selected-date{
+  width: 464px;
+  height: 92px;
+  max-height: 92px;
+  background: #E14927;
+  background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
+  radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
+  radial-gradient(circle at bottom right, transparent 15px, #E14927 0) bottom right,
+  radial-gradient(circle at bottom left, transparent 15px, #E14927 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+h4{
+  font-size: 27px;
+}
+.info-buy-ticket{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding: 0 20px;
+}
+.name-of-selected-permormance{
+  padding: 0 20px;
+}
+.dates-of-performance div:nth-child(4){
+  background: #E14927;
+  background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
+  radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
+  radial-gradient(circle at bottom right, transparent 15px, #E14927 0) bottom right,
+  radial-gradient(circle at bottom left, transparent 15px, #E14927 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+img{
+  max-width: 100%;
+}
+main{
+  margin: 0px 20px 0px 20px;
+}
+.columns{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /*position: relative;
+  top:-140px*/;
+}
+
+.buy-ticket-button{
+  padding: 5px;
+  line-height: 1.5em;
+  background: #4F4F4F;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.center-Nav{
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.center-Nav img{
+  margin-right: 5px;
+  max-height: 1.5em;
+}
+.center-Nav a{
+  text-decoration: none;
+  color: #363a3b;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.center-Nav a:hover{
+  color: #df4a2b;
+}
+article{
+  max-width: 484px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+h2{
+  color: #df4a2b;
+  font-size: 30px;
+}
+h3{
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-weight: bold;
+  padding: 0 5px 0 5px;
+}
+.text-in-article{
+  margin-bottom: 5px;
+  padding: 0 5px 0 5px;
+}
+.date-and-views{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: smaller;
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  padding: 0 7px 0 7px;
+}
+.viewed-times{
+  max-height: 1em;
+  margin-right: 2px;
+}
+aside{
+  max-width: 235px;
+}
+.aside-gallery{
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.aside-gallery p{
+  padding: 15px;
+}
+.video-add-margin{
+  margin-top: 15px;
+}
+footer::before {
+  /* Градиент */
+  background: #f1592a;
+  background: -moz-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f1592a), color-stop(100%, #bf1e2e));
+  background: -webkit-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: -o-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: -ms-linear-gradient(left, #f1592a 0%, #bf1e2e 100%);
+  background: linear-gradient(to right, #f1592a 0%, #bf1e2e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#999999', GradientType=1);
+  content: "";
+  display: block;
+  /* Вместо толщины */
+  height: 3px;
+  width: 100%;
+}
+.footer-nav{
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.footer-nav a {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.footer-nav a:hover{
+  color: #cd2e2d;
+  /*margin: 0 5px;*/
+}
+.footer-nav div{
+  background: darkgray;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 5px;
+  text-align: center;
+}
+.footer-nav div img{
+  text-align: center;
+  vertical-align: middle;
+}
+.footer-nav a{
+  text-decoration: none;
+  color: darkgray;
+}
+.footer-nav div:hover{
+  background: orangered;
+  border: 1px solid orangered;
+}
+.more-right{
+  margin-left: 209px;
+}
+.back-to-top{
+  width: 32px;
+  height: 32px;
+  background-color: #cd2e2d;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  margin-left: 1150px;
+  justify-content: center;
+  align-items: center;
+}
