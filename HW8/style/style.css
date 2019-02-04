@@ -1,6 +1,6 @@
 body{
   padding: 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 img{
@@ -8,7 +8,7 @@ img{
   margin: 0;
 }
 h1{
-  margin: 2px 20px 2px 0px;
+  margin: 2px 20px 2px 0;
 }
 header{
   background-image: linear-gradient(to left, #bf1e2e, #f1592a);
@@ -47,10 +47,10 @@ header{
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-end;
-  background: url("../img/preview.png");
   height: 528px;
   background-size: cover;
-  background-position:  center center;
+  background-image: url("../img/preview3.png");
+  background-position: center center;
 }
 .dates-of-performance{
   display: flex;
@@ -72,9 +72,11 @@ header{
   background: #505050;
   color: white;
   border-radius: 5px;
+  border: none;
 }
 .arrow:hover{
   background: #E14927;
+  cursor: pointer;
 }
 .date-of-performance{
   margin: 0 1px 0 1px;
@@ -82,9 +84,9 @@ header{
   height: 92px;
   background: #4F4F4F;
   background: radial-gradient(circle at top left, transparent 15px, #4F4F4F 0) top left,
-              radial-gradient(circle at top right, transparent 15px, #4F4F4F 0) top right,
-              radial-gradient(circle at bottom right, transparent 15px, #4F4F4F 0) bottom right,
-              radial-gradient(circle at bottom left, transparent 15px, #4F4F4F 0) bottom left;
+  radial-gradient(circle at top right, transparent 15px, #4F4F4F 0) top right,
+  radial-gradient(circle at bottom right, transparent 15px, #4F4F4F 0) bottom right,
+  radial-gradient(circle at bottom left, transparent 15px, #4F4F4F 0) bottom left;
   background-size: 50% 50%;
   background-repeat: no-repeat;
   display: flex;
@@ -111,10 +113,10 @@ header{
   radial-gradient(circle at bottom left, transparent 15px, #E14927 0) bottom left;
   background-size: 50% 50%;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
+  display: none;
 }
 h4{
   font-size: 27px;
@@ -129,7 +131,16 @@ h4{
 .name-of-selected-permormance{
   padding: 0 20px;
 }
-.dates-of-performance div:nth-child(4){
+.date-of-performance-default{
+  background: #E14927;
+  background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
+  radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
+  radial-gradient(circle at bottom right, transparent 15px, #E14927 0) bottom right,
+  radial-gradient(circle at bottom left, transparent 15px, #E14927 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+.date-of-performance-selected{
   background: #E14927;
   background: radial-gradient(circle at top left, transparent 15px, #E14927 0) top left,
   radial-gradient(circle at top right, transparent 15px, #E14927 0) top right,
@@ -142,7 +153,7 @@ img{
   max-width: 100%;
 }
 main{
-  margin: 0px 20px 0px 20px;
+  margin: 0 20px 0 20px;
 }
 .columns{
   margin-top: 20px;
@@ -185,7 +196,7 @@ article{
   max-width: 484px;
   margin-top: 15px;
   border-radius: 8px;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 h2{
   color: #df4a2b;
@@ -220,7 +231,7 @@ aside{
 .aside-gallery{
   margin-top: 15px;
   border-radius: 8px;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 .aside-gallery p{
   padding: 15px;
@@ -294,4 +305,10 @@ footer::before {
   margin-left: 1150px;
   justify-content: center;
   align-items: center;
+}
+.no-display-default{
+  display: none;
+}
+.displayFlex{
+  display: flex;
 }
