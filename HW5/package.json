@@ -13,7 +13,7 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "npm": "^6.4.1",
     "serve": "^10.1.1"
   },
